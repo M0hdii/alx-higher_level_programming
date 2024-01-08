@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ A module for the function 'lookup' """
+
+
 def lookup(obj):
     """
         A function that detects the available attributes
