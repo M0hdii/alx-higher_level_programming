@@ -1,0 +1,34 @@
+# Tests for 1-my_list.py
+
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> isinstance(my_list, MyList)
+True
+
+>>> issubclass(MyList, list)
+True
+
+>>> my_list_emp = MyList()
+>>> my_list_emp.print_sorted()
+[]
+
+
+>>> all_pos = MyList()
+>>> all_pos.append(0)
+>>> all_pos.append(1)
+>>> all_pos.append(2)
+>>> all_pos.print_sorted()
+[0, 1, 2]
+>>> print(all_pos)
+[0, 1, 2]
+
+>>> pos_neg = MyList()
+>>> pos_neg.append(-2)
+>>> pos_neg.append(2)
+>>> pos_neg.append(0)
+>>> pos_neg.append(1)
+>>> pos_neg.append(-1)
+>>> pos_neg.print_sorted()
+[-2, -1, 0, 1, 2]
+>>> print(pos_neg)
+[-2, 2, 0, 1, -1]
